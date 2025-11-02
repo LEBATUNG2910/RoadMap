@@ -1,0 +1,113 @@
+/* ------------------------------------- */
+/* 1. Global/Reset Styles */
+/* ------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* ------------------------------------- */
+/* 2. Dropdown Container */
+/* ------------------------------------- */
+.custom-dropdown {
+    width: 250px;
+    position: relative; /* Key for positioning the list */
+    user-select: none;
+}
+
+/* ------------------------------------- */
+/* 3. Dropdown Header (The "Button") */
+/* ------------------------------------- */
+.dropdown-header {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Default/Selected state rounded corners */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-radius 0.2s;
+}
+
+.dropdown-header.open {
+    /* When open, only round the top corners. */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none; /* Make it visually merge with the list */
+}
+
+.arrow-icon {
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+/* ------------------------------------- */
+/* 4. Dropdown List (The Menu) */
+/* ------------------------------------- */
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-top: none; /* Remove top border to merge with header */
+    border-bottom-left-radius: 8px; /* Rounded bottom corners */
+    border-bottom-right-radius: 8px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    /* Smooth transition for opening/closing */
+    transition: max-height 0.3s ease-out;
+}
+
+/* State when the parent is open */
+.custom-dropdown.open .dropdown-list {
+    max-height: 300px; /* Large enough to show all items */
+    overflow-y: auto;
+}
+
+.custom-dropdown.open .arrow-icon {
+    transform: rotate(180deg); /* Flip the arrow for the '^' effect */
+}
+
+
+/* ------------------------------------- */
+/* 5. List Items */
+/* ------------------------------------- */
+.dropdown-list li {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee; /* Separator lines */
+}
+
+.dropdown-list li:hover {
+    background-color: #f2f2f2;
+}
+
+/* Styling for the selected item */
+.dropdown-list li.selected {
+    font-weight: bold;
+    background-color: #e6f7ff; /* Light background for selection */
+    color: #007bff; /* Optional text color for selection */
+}
+
+/* Checkmark icon for the selected item */
+.dropdown-list li.selected::after {
+    content: '\2713'; /* Unicode for checkmark */
+    font-size: 16px;
+    color: #007bff;
+    margin-left: 10px;
+}
