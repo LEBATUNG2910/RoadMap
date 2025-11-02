@@ -2,6 +2,6 @@
 - Describe about my skill and education
 - https://roadmap.sh/projects/single-page-cv
 
-- Task 2: Js and DOM
-- Know about js
-- https://roadmap.sh/projects/simple-tabs
+- Task 2: dropdown
+- JS, HTML, CSS
+- https://roadmap.sh/projects/custom-dropdown
