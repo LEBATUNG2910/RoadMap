@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Random Repo Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>GitHub Repository Finder</h1>
+        </header>
+
+        <div class="controls">
+            <select id="languageSelect">
+                <option value="" disabled selected>Select a Language</option>
+                <option value="javascript">JavaScript</option>
+                <option value="typescript">TypeScript</option>
+                <option value="python">Python</option>
+                <option value="go">Go</option>
+                <option value="java">Java</option>
+                <option value="rust">Rust</option>
+            </select>
+        </div>
+
+        <div id="content-area" class="content-area">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

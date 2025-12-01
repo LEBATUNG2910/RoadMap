@@ -1,0 +1,144 @@
+:root {
+    --primary: #000;
+    --bg-color: #f4f6f8;
+    --border: #e1e4e8;
+    --error-bg: #ffeef0;
+    --error-text: #cd3d3d;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    width: 400px;
+    border: 1px solid var(--border);
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h1::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: black; /* Placeholder for GitHub Icon */
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+/* State Styling */
+.state-box {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    color: #666;
+}
+
+.error-box {
+    background-color: var(--error-bg);
+    color: var(--error-text);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.retry-btn {
+    background-color: #d73a49;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Repository Card Styling */
+.repo-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: white;
+    text-align: left;
+}
+
+.repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.repo-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.repo-desc {
+    font-size: 0.9rem;
+    color: #586069;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.repo-stats {
+    display: flex;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #586069;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #f1e05a; /* JS Color */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.refresh-btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
