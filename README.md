@@ -11,3 +11,6 @@
 
 - Task 4: story feature
 - https://roadmap.sh/projects/stories-feature
+
+- Task 5: Weather App
+- https://roadmap.sh/projects/weather-app
