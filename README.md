@@ -3,7 +3,6 @@
 - https://roadmap.sh/projects/single-page-cv
 
 - Task 2: dropdown
-- JS, HTML, CSS
 - https://roadmap.sh/projects/custom-dropdown
 
 - Task 3: random repo
