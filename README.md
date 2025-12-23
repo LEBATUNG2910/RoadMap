@@ -13,3 +13,6 @@
 
 - Task 5: Weather App
 - https://roadmap.sh/projects/weather-app
+
+- Task 6: Quiz App
+- https://roadmap.sh/projects/quiz-app
