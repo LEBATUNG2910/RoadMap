@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect,} from 'react';
 import { Search, Wind, Droplets, RefreshCw, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 
 const API_KEY = '43DXR9R388T8E2JXVD7W4NRTR'; // Replace with your key
 const BASE_URL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline';
