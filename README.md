@@ -16,3 +16,6 @@
 
 - Task 6: Quiz App
 - https://roadmap.sh/projects/quiz-app
+
+- Task 7: Reddit
+- https://roadmap.sh/projects/reddit-client
